@@ -81,7 +81,7 @@ This project was undertaken in collaboration with Cali303 Productions, an eclect
     </tr>
  <td align="center"><img src="https://avatars.githubusercontent.com/u/106054421?v=4" alt="Lee Young GitHub"
  width="150" height="auto" /></td>
-<td align="center"> Website created by Joven Designs </td>
+<tr align="center"><td align="center"> Website created by Joven Designs </td></tr>
 </table>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
