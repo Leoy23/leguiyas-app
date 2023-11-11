@@ -8,18 +8,16 @@ import { BiLogoSpotify } from "react-icons/bi";
 import { BiLogoApple } from "react-icons/bi";
 
 
-
-
 const SocialMedia = () => {
     return (
-        <div>
-            <BiLogoInstagram color={"darkerPink"} />
-            <BiLogoFacebookSquare />
-            <BiLogoTiktok />
-            <BiLogoYoutube />
-            <BiLogoPatreon />
-            <BiLogoSpotify />
-            <BiLogoApple />
+        <div className="p-8">
+            <BiLogoInstagram className="text-darkPink" size={30} />
+            <BiLogoFacebookSquare className="text-darkPink" size={30} />
+            <BiLogoTiktok className="text-darkPink" size={30} />
+            <BiLogoYoutube className="text-darkPink" size={30} />
+            <BiLogoPatreon className="text-darkPink" size={30} />
+            <BiLogoSpotify className="text-darkPink" size={30} />
+            <BiLogoApple className="text-darkPink" size={30} />
         </div>
     )
 }
