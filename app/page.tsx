@@ -5,6 +5,9 @@ import Navbar from './components/Navbar';
 import Merch from './components/Merch';
 import Videos from './components/Videos';
 import Footer from './components/Footer';
+import Image from 'next/image';
+import leguiyaHome from "@/public/leguiya-home.png";
+import smoke from "@/public/smoke-lg.png";
 
 
 
@@ -22,15 +25,21 @@ const Home = async () => {
   console.log(data.data, "here")
 
   return (
-    <div>
+    <main>
       <Navbar />
-      <Bio />
-      <Music />
-      <Videos />
-      <Merch />
-      <Contact />
-      <Footer />
-    </div>
+      <section className='relative'>
+        <Image src={leguiyaHome} alt='photo of leguiya' priority className='w-52' />
+        <Image src={smoke} alt='photo of leguiya' priority className='z-10 w-full' />
+      </section>
+      <section>
+        <Bio />
+        <Music />
+        <Videos />
+        <Merch />
+        <Contact />
+        <Footer />
+      </section>
+    </main>
   )
 }
 

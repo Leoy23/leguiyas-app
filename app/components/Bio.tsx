@@ -11,15 +11,17 @@ const Bio = () => {
     useEffect(() => {
         fetch("http://localhost:8080/api/artist")
             .then((res) => res.json())
-            .then((data) => console.log(data))
+            .then((data) => setArtistInfo(data))
     }, [])
 
     return (
-        <div id="bio">
+        <div id="bio" className="flex flex-col justify-center p-20">
             <Image src={bioHeading} alt="bio heading" width={375} height={375} priority />
-            <div>
-                <p>{(artistInfo as { bio: string; socialMedia: object }).bio}</p>
-                <Image src={leguiya} alt="photo of leguiya" priority />
+            <div className="flex justify-center items-center">
+                <div className="mx-10">
+                    <p>{(artistInfo as { bio: string; socialMedia: object }).bio}</p>
+                </div>
+                <Image src={leguiya} alt="photo of leguiya" priority className="h-3/4 w-1/4" />
             </div>
         </div>
     )
