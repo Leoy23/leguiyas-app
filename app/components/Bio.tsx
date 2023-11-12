@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import bioHeading from "@/public/bio.png";
+import leguiyaHeading from "@/public/leguiya-name.png";
 import leguiya from "@/public/leguiya-about.png";
 
 const Bio = () => {
@@ -16,11 +17,11 @@ const Bio = () => {
     }, [])
 
     return (
-        <div id="bio" className="flex flex-col justify-center p-20">
+        <div id="bio" className="flex flex-col md:flex-row ustify-center">
             <div className="flex justify-center">
                 <Image src={bioHeading} alt="bio heading" width={375} height={375} priority />
             </div>
-            <div className="flex justify-center items-center">
+            <div className="flex flex-col-reverse justify-center items-center">
                 <div className="mx-10">
                     <p>{(artistInfo as { bio: string; socialMedia: object }).bio ? (artistInfo as { bio: string; socialMedia: object }).bio : "This is where the bio would go!"}</p>
                 </div>

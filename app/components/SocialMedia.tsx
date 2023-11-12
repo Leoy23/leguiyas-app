@@ -10,14 +10,14 @@ import { BiLogoApple } from "react-icons/bi";
 
 const SocialMedia = () => {
     return (
-        <div className="p-8">
-            <BiLogoInstagram className="text-darkPink" size={30} />
-            <BiLogoFacebookSquare className="text-darkPink" size={30} />
-            <BiLogoTiktok className="text-darkPink" size={30} />
-            <BiLogoYoutube className="text-darkPink" size={30} />
-            <BiLogoPatreon className="text-darkPink" size={30} />
-            <BiLogoSpotify className="text-darkPink" size={30} />
-            <BiLogoApple className="text-darkPink" size={30} />
+        <div className="p-6 hidden md:flex md:flex-col md:gap-4">
+            <BiLogoInstagram className="text-darkPink w-6 h-6" />
+            <BiLogoFacebookSquare className="text-darkPink w-6 h-6" />
+            <BiLogoTiktok className="text-darkPink w-6 h-6" />
+            <BiLogoYoutube className="text-darkPink w-6 h-6" />
+            <BiLogoPatreon className="text-darkPink w-6 h-6" />
+            <BiLogoSpotify className="text-darkPink w-6 h-6" />
+            <BiLogoApple className="text-darkPink w-6 h-6" />
         </div>
     )
 }
