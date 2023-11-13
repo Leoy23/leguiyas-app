@@ -11,17 +11,15 @@ import HomeSection from './components/HomeSection';
 const Home = async () => {
 
   return (
-    <main className='w-full h-screen'>
+    <main className=''>
       <Navbar />
       <HomeSection />
-      <section>
-        <Bio />
-        <Music />
-        <Videos />
-        <Merch />
-        <Contact />
-        <Footer />
-      </section>
+      <Bio />
+      <Music />
+      <Videos />
+      <Merch />
+      <Contact />
+      <Footer />
     </main>
   )
 }
