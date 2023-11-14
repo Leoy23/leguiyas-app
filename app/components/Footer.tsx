@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="w-full border-b-8 border-pink text-center font-thin text-xs md:text-base pb-4">
             <div className="flex items-center justify-center flex-col">
                 <Image src={logo} alt="logo" priority className="w-44 my-6" />
-                <Link href={"/"} className="underline mb-8">BACK TO THE TOP</Link>
+                <Link href={"/"} className="underline mb-8 scroll-smooth">BACK TO THE TOP</Link>
             </div>
             <NewsletterForm />
         </div>
