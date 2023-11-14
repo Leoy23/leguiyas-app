@@ -19,7 +19,7 @@ const Bio = () => {
     return (
         <div id="bio" className="flex flex-col justify-center">
             <div className="flex justify-center">
-                <Image src={bioHeading} alt="bio heading" className="" priority />
+                <Image src={bioHeading} alt="bio heading" priority />
             </div>
             <div className="flex flex-col-reverse items-center md:flex-row md:px-12 md:z-20">
                 <div className="mx-10 md:text-lg">
