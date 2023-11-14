@@ -19,9 +19,9 @@ const Bio = () => {
     return (
         <div id="bio" className="flex flex-col justify-center">
             <div className="flex justify-center">
-                <Image src={bioHeading} alt="bio heading" className="w-1/2 h-1/2 lg:w-2/4" priority />
+                <Image src={bioHeading} alt="bio heading" className="" priority />
             </div>
-            <div className="flex flex-col-reverse items-center md:flex-row md:p-12 md:z-20">
+            <div className="flex flex-col-reverse items-center md:flex-row md:px-12 md:z-20">
                 <div className="mx-10 md:text-lg">
                     <p>{(artistInfo as BioInfo).bio ? (artistInfo as BioInfo).bio : "Loading..."}</p>
                 </div>
