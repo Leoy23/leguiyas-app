@@ -1,12 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { BioInfo } from "../models";
 import Image from "next/image";
 import bioHeading from "@/public/bio.png";
 import leguiya from "@/public/leguiya-about.png";
 
 const Bio = () => {
-    const [artistInfo, setArtistInfo] = useState<{ bio: string; socialMedia: object } | {}>({});
+    const [artistInfo, setArtistInfo] = useState<BioInfo | {}>({});
 
     useEffect(() => {
         fetch("http://localhost:8080/api/artist")
@@ -22,7 +23,7 @@ const Bio = () => {
             </div>
             <div className="flex flex-col-reverse items-center md:flex-row md:p-12 md:z-20">
                 <div className="mx-10 md:text-lg">
-                    <p>{(artistInfo as { bio: string; socialMedia: object }).bio ? (artistInfo as { bio: string; socialMedia: object }).bio : "Loading..."}</p>
+                    <p>{(artistInfo as BioInfo).bio ? (artistInfo as BioInfo).bio : "Loading..."}</p>
                 </div>
                 <Image src={leguiya} alt="photo of leguiya" priority className="w-2/4" />
             </div>

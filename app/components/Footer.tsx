@@ -2,11 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/logo-transparent.png";
 import { NavLinks } from "../models";
-import { navlinks } from "../utils";
 import NewsletterForm from "./NewsletterForm";
 
 const Footer = () => {
-    const navigationLinks: NavLinks = navlinks;
+    const navigationLinks: NavLinks = ["BIO", "MUSIC", "VIDEOS", "MERCH", "CONTACT"];
     return (
         <div className="w-full border-b-8 border-pink text-center font-thin text-xs md:text-base pb-4">
             <div className="flex items-center justify-center flex-col">

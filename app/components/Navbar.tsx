@@ -1,13 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { navlinks } from "../utils";
 import { useState, useEffect } from "react";
 import { BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
+import { NavLinks } from "../models";
 
 const Navbar = () => {
     const [open, setOpen] = useState<boolean>(false);
+    const [navLinks, setNavLinks] = useState<NavLinks>(["BIO", "MUSIC", "VIDEOS", "MERCH", "CONTACT"])
 
     const handleRouteChange = () => {
         setOpen(false);
@@ -30,7 +31,7 @@ const Navbar = () => {
                     )}
                 </div>
                 <ul className={`text-center md:flex md:justify-center md:items-center md:gap-24 lg:gap-32 fixed md:static transition-all duration-500 ease-in-out ${open ? 'bg-darkPink top-16 opacity-100 gap-2 p-6' : '-top-[490px] md:opacity-100 opacity-0'}`} onScroll={handleRouteChange}>
-                    {navlinks.map((link, index) => (
+                    {navLinks.map((link, index) => (
                         <li key={index} className={`pb-2 ${link.toUpperCase() === 'CONTACT' && "rounded-full bg-pink py-2 px-2"}`} onClick={(e) => {
                             e.preventDefault();
                             setOpen(false);
@@ -46,6 +47,3 @@ const Navbar = () => {
     );
 }
 export default Navbar;
-
-
-// set up navlinks using the api route created in express
