@@ -1,5 +1,5 @@
 import Image from "next/image";
-import videoHeading from "@/public/video.png";
+import videoHeading from "@/public/videos.png";
 
 const Videos = () => {
     return (

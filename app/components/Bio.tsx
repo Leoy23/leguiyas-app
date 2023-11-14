@@ -16,11 +16,11 @@ const Bio = () => {
     }, [])
 
     return (
-        <div id="bio" className="flex flex-col justify-center static">
+        <div id="bio" className="flex flex-col justify-center">
             <div className="flex justify-center">
                 <Image src={bioHeading} alt="bio heading" className="w-1/2 h-1/2 lg:w-2/4" priority />
             </div>
-            <div className="static flex flex-col-reverse items-center md:flex-row md:p-12 md:z-20">
+            <div className="flex flex-col-reverse items-center md:flex-row md:p-12 md:z-20">
                 <div className="mx-10 md:text-lg">
                     <p>{(artistInfo as { bio: string; socialMedia: object }).bio ? (artistInfo as { bio: string; socialMedia: object }).bio : "Loading..."}</p>
                 </div>

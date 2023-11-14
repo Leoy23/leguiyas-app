@@ -8,9 +8,9 @@ import NewsletterForm from "./NewsletterForm";
 const Footer = () => {
     const navigationLinks: NavLinks = navlinks;
     return (
-        <div className="border-b-8 border-pink text-center font-thin text-xs md:text-base p-4">
+        <div className="w-full border-b-8 border-pink text-center font-thin text-xs md:text-base pb-4">
             <div className="flex items-center justify-center flex-col">
-                <Image src={logo} alt="logo" width={150} height={150} priority className="my-6" />
+                <Image src={logo} alt="logo" priority className="w-44 my-6" />
                 <ul className="flex justify-center gap-6 p-4">
                     {navigationLinks.map((link, index) => {
                         return (
