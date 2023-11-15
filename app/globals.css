@@ -15,3 +15,13 @@ body {
 .song-btn {
   background-color: darkerPink;
 }
+
+.sublevel-heading {
+  letter-spacing: 0.5em;
+}
+
+@media (min-width: 769px) {
+  .sublevel-heading {
+    letter-spacing: 1.25em;
+  }
+}

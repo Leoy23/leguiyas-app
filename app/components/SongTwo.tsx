@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import albumCover from "@/public/mock-album.png";
 
-const Song = () => {
+const SongTwo = () => {
   return (
-    <section className="flex flex-col sm:flex-row-reverse sm:items-center sm:justify-evenly w-full md:px-12">
-      <div className="mx-10 md:mx-0">
+    <section className="flex flex-col sm:flex-row sm:items-center sm:justify-evenly w-full md:px-12">
+      <div className="mx-10 md:mx-2">
         <Image
           src={albumCover}
           alt="leguiya's mock album cover"
@@ -16,7 +16,7 @@ const Song = () => {
         <h3 className="text-xs md:text-lg lg:text-xl font-semibold sublevel-heading">
           NEW EP RELEASE
         </h3>
-        <div className="mx-10 text-xs">
+        <div className="mx-10 text-xs md:text-sm">
           <button className="bg-pink p-3 border-2 border-white w-full hover:bg-white hover:text-pink hover:border-pink">
             <Link href={"https://music.apple.com/us/browse"}>APPLE MUSIC</Link>
           </button>
@@ -37,4 +37,4 @@ const Song = () => {
   );
 };
 
-export default Song;
+export default SongTwo;

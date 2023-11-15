@@ -4,3 +4,11 @@ export interface BioInfo {
   bio: string;
   socialMedia: object;
 }
+
+export interface SongInfo {
+  songOne: {
+    string,
+  songTwo: string;
+  songThree: string;
+  songFour: string;
+}

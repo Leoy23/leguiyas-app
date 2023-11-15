@@ -12,6 +12,7 @@ const config: Config = {
       darkPink: "#C92254",
       lightPink: "#FF417A",
       darkerPink: "#822440",
+      white: "#ffffff",
     },
   },
   plugins: [require("@tailwindcss/forms")],
