@@ -13,14 +13,14 @@ const Song = () => {
         />
       </div>
       <section className="text-center flex flex-col gap-2 mt-2 w-full md:w-2/4">
-        <h3 className="text-xs md:text-lg lg:text-xl font-semibold sublevel-heading">
+        <h3 className="text-xs xl:text-xl font-semibold sublevel-heading">
           NEW EP RELEASE
         </h3>
-        <div className="mx-10 text-xs">
+        <div className="mx-10 text-xs md:text-sm">
           <button className="bg-pink p-3 border-2 border-white w-full hover:bg-white hover:text-pink hover:border-pink">
             <Link href={"https://music.apple.com/us/browse"}>APPLE MUSIC</Link>
           </button>
-          <div className="flex w-full gap-2 md:gap-8 mt-8">
+          <div className="flex justify-evenly w-full gap-4 md:gap-8 mt-8">
             <button className="bg-pink p-3 border-2 border-white w-3/4 hover:bg-white hover:text-pink hover:border-pink">
               <Link href={"https://soundcloud.com/"}>SOUNDCLOUD</Link>
             </button>
@@ -28,7 +28,7 @@ const Song = () => {
               <Link href={"https://open.spotify.com/"}>SPOTIFY</Link>
             </button>
           </div>
-          <button className="bg-pink p-3 border-2 border-white w-full mt-6 hover:bg-white hover:text-pink hover:border-pink">
+          <button className="bg-pink p-3 border-2 border-white w-full mt-8 hover:bg-white hover:text-pink hover:border-pink">
             <Link href={"https://genius.com/"}>LYRICS</Link>
           </button>
         </div>
