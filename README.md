@@ -5,7 +5,7 @@
 
 <h3 align="center"><i>Creative, Entertainer & Musician</i></h3>
 
-<h4 align="center"><a href="https://github.com/Leoy23/leguiyas-app/"> | <strong>Deploy Link</strong> |</a></h4>
+<h4 align="center"><a href="https://leguiyas-app.vercel.app/"> | <strong>Deploy Link</strong> |</a></h4>
 
 <p></p>
 
