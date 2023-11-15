@@ -7,8 +7,11 @@ export interface BioInfo {
 
 export interface SongInfo {
   songOne: {
-    string,
-  songTwo: string;
-  songThree: string;
-  songFour: string;
+    songTitle: string;
+    songLink: string;
+  };
+  songTwo: {
+    songTitle: string;
+    songLink: string;
+  };
 }
