@@ -7,9 +7,9 @@ import Videos from "./components/Videos";
 import Footer from "./components/Footer";
 import HomeSection from "./components/HomeSection";
 
-const Home = async () => {
+const Home = () => {
   return (
-    <main className="bg-black">
+    <main>
       <Navbar />
       <HomeSection />
       <Bio />

@@ -11,3 +11,7 @@ body {
   color: white;
   font: bold;
 }
+
+.song-btn {
+  background-color: darkerPink;
+}
