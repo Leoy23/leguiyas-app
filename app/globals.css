@@ -7,9 +7,9 @@ body {
   color: white;
 }
 
-.form-input::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: white;
-  font: bold;
 }
 
 .song-btn {

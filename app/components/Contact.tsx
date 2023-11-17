@@ -1,11 +1,66 @@
+"use client";
+
 import Image from "next/image";
 import contactHeading from "@/public/contact-us.png";
+import { useState } from "react";
 
 const Contact = () => {
+  const openModal = () => {
+    const dialogElement = document.getElementById("contact_form_modal");
+    if (dialogElement instanceof HTMLDialogElement) {
+      dialogElement.showModal();
+    }
+  };
+
   return (
-    <div id="contact" className="text-center mt-8">
+    <div id="contact" className="text-center mt-8 flex flex-col items-center">
       <Image src={contactHeading} alt="contact heading" priority />
-      <h1>This is where the contact form will be!</h1>
+      <button
+        className={"mb-4 btn bg-darkerPink text-white"}
+        onClick={openModal}
+      >
+        Send us a message!
+      </button>
+      <dialog id="contact_form_modal">
+        <form
+          className={`form-control w-full max-w-sm bg-pink px-3 py-4 rounded-lg`}
+        >
+          <div className="mb-2">
+            <label className="label">
+              <span className="label-text text-white">Name:</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Name..."
+              className="input input-bordered w-full max-w-sm bg-darkPink"
+            />
+          </div>
+          <div className="mb-2">
+            <label className="label">
+              <span className="label-text text-white">Email:</span>
+            </label>
+            <input
+              type="email"
+              placeholder="Email..."
+              className="input w-full max-w-sm bg-darkPink"
+            />
+          </div>
+          <div className="mb-2">
+            <label className="label">
+              <span className="label-text text-white">Message:</span>
+            </label>
+            <textarea
+              placeholder="Type your message here..."
+              className="textarea textarea-bordered textarea-lg w-full max-w-sm bg-darkPink"
+            ></textarea>
+          </div>
+          <div>
+            <button className="btn bg-darkerPink text-white border-transparent hover:bg-white hover:text-darkerPink w-1/2">
+              SEND
+            </button>
+          </div>
+        </form>
+      </dialog>
     </div>
   );
 };
