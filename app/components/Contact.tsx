@@ -2,9 +2,29 @@
 
 import Image from "next/image";
 import contactHeading from "@/public/contact-us.png";
-import { useState } from "react";
+import { useRef } from "react";
 
 const Contact = () => {
+  // const form = useRef();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+  //   emailjs
+  //     .sendForm(
+  //       "YOUR_SERVICE_ID",
+  //       "YOUR_TEMPLATE_ID",
+  //       form.current,
+  //       "YOUR_PUBLIC_KEY"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  // };
+
   const openModal = () => {
     const dialogElement = document.getElementById("contact_form_modal");
     if (dialogElement instanceof HTMLDialogElement) {
@@ -21,9 +41,12 @@ const Contact = () => {
       >
         Send us a message!
       </button>
-      <dialog id="contact_form_modal">
+      <dialog id="contact_form_modal" className="modal">
         <form
-          className={`form-control w-full max-w-sm bg-pink px-3 py-4 rounded-lg`}
+          className={
+            "form-control w-full max-w-sm bg-pink px-3 py-4 rounded-lg"
+          }
+          // ref={form}
         >
           <div className="mb-2">
             <label className="label">

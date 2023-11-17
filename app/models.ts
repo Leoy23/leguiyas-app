@@ -15,3 +15,9 @@ export interface SongInfo {
     songLink: string;
   };
 }
+
+export interface EmailData {
+  to_name: string;
+  from_email: string;
+  message: string;
+}
