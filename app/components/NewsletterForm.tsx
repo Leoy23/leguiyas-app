@@ -9,34 +9,31 @@ const NewsletterForm = () => {
   const handleSubmit = () => {};
 
   return (
-    <>
-      <div id="newsletterForm">
+    <section className="w-full flex justify-end pb-4">
+      <div id="newsletterForm" className="">
         {error}
-        <form>
-          <label htmlFor="email" className="font-semibold mr-8">
-            JOIN OUR NEWSLETTER
+        <form className="max-w-lg w-full md:max-w-xl lg:max-w-2xl xl:max-w-3xl px-4">
+          <label className="label">
+            <span className="label-text text-white">Join our newsletter</span>
           </label>
-          <br />
-          <div className="flex justify-center relative">
+          <div className="flex">
             <input
               type="email"
-              name="email"
-              id="email"
-              placeholder="EMAIL"
-              onChange={(e) => setUserEmail(e.target.value)}
-              className="p-2 bg-darkPink shadow-md w-3/4 md:w-1/2 text-white focus:ring-darkerPink focus:border-darkPink focus:shadow-outline border-none form-input"
-              required
+              placeholder="Email..."
+              className="input input-bordered w-full max-w-full md:w-96 bg-darkPink"
             />
-            <button
-              onClick={handleSubmit}
-              className="bg-darkerPink p-[.8rem] absolute right-6 -top-[.55px]  md:right-36 md:p-[.6rem]"
-            >
-              SUBMIT
-            </button>
+            <div>
+              <button
+                type="button"
+                className="btn bg-darkerPink text-white border-transparent hover:bg-white hover:text-darkerPink"
+              >
+                SEND
+              </button>
+            </div>
           </div>
         </form>
       </div>
-    </>
+    </section>
   );
 };
 

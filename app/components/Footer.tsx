@@ -5,7 +5,7 @@ import NewsletterForm from "./NewsletterForm";
 
 const Footer = () => {
   return (
-    <div className="w-full text-center font-thin text-xs md:text-base">
+    <div className="flex flex-col items-center w-full text-center font-thin text-xs md:text-base">
       <div className="flex items-center justify-center flex-col">
         <Image src={logo} alt="logo" priority className="w-44 my-6" />
         <Link href={"/"} className="underline mb-8 scroll-smooth">
