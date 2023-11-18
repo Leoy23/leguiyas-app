@@ -1,16 +1,16 @@
 import Bio from "./components/Bio";
 import Contact from "./components/Contact";
 import Music from "./components/Music";
-import Navbar from "./components/Navbar";
 import Merch from "./components/Merch";
 import Videos from "./components/Videos";
 import Footer from "./components/Footer";
 import HomeSection from "./components/HomeSection";
+import Nav from "./components/Nav";
 
 const Home = () => {
   return (
     <main>
-      <Navbar />
+      <Nav />
       <HomeSection />
       <Bio />
       <Music />

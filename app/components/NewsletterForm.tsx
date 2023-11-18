@@ -10,7 +10,7 @@ const NewsletterForm = () => {
 
   return (
     <section className="w-full flex justify-center pb-4">
-      <div id="newsletter_Form" className="">
+      <div id="newsletter_form" className="">
         {error}
         <form className="max-w-lg w-full md:max-w-xl lg:max-w-2xl xl:max-w-3xl px-4">
           <label className="label">

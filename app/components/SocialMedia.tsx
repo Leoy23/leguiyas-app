@@ -7,19 +7,18 @@ import { BiLogoPatreon } from "react-icons/bi";
 import { BiLogoSpotify } from "react-icons/bi";
 import { BiLogoApple } from "react-icons/bi";
 
-
 const SocialMedia = () => {
-    return (
-        <div className="hidden md:flex md:flex-col md:gap-4 md:p-2 lg:p-7">
-            <BiLogoInstagram className="text-darkPink w-6 h-6" />
-            <BiLogoFacebookSquare className="text-darkPink w-6 h-6" />
-            <BiLogoTiktok className="text-darkPink w-6 h-6" />
-            <BiLogoYoutube className="text-darkPink w-6 h-6" />
-            <BiLogoPatreon className="text-darkPink w-6 h-6" />
-            <BiLogoSpotify className="text-darkPink w-6 h-6" />
-            <BiLogoApple className="text-darkPink w-6 h-6" />
-        </div>
-    )
-}
+  return (
+    <div className="hidden md:flex md:flex-col md:gap-4 md:p-2 lg:p-10">
+      <BiLogoInstagram className="text-darkPink w-6 h-6" />
+      <BiLogoFacebookSquare className="text-darkPink w-6 h-6" />
+      <BiLogoTiktok className="text-darkPink w-6 h-6" />
+      <BiLogoYoutube className="text-darkPink w-6 h-6" />
+      <BiLogoPatreon className="text-darkPink w-6 h-6" />
+      <BiLogoSpotify className="text-darkPink w-6 h-6" />
+      <BiLogoApple className="text-darkPink w-6 h-6" />
+    </div>
+  );
+};
 
 export default SocialMedia;
