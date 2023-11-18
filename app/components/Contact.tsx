@@ -36,7 +36,8 @@ const Contact = () => {
     <div id="contact" className="text-center mt-8 flex flex-col items-center">
       <Image src={contactHeading} alt="contact heading" priority />
       <button
-        className={"mb-4 btn bg-darkerPink text-white"}
+        type="button"
+        className="btn bg-darkerPink text-white border-transparent hover:bg-white hover:text-darkerPink"
         onClick={openModal}
       >
         Send us a message!
@@ -54,7 +55,7 @@ const Contact = () => {
             </label>
             <input
               type="text"
-              placeholder="Name..."
+              // placeholder="Name..."
               className="input input-bordered w-full max-w-sm bg-darkPink"
             />
           </div>
@@ -64,7 +65,7 @@ const Contact = () => {
             </label>
             <input
               type="email"
-              placeholder="Email..."
+              // placeholder="Email..."
               className="input w-full max-w-sm bg-darkPink"
             />
           </div>
@@ -73,7 +74,7 @@ const Contact = () => {
               <span className="label-text text-white">Message:</span>
             </label>
             <textarea
-              placeholder="Type your message here..."
+              // placeholder="Type your message here..."
               className="textarea textarea-bordered textarea-lg w-full max-w-sm bg-darkPink"
             ></textarea>
           </div>

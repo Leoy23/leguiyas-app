@@ -17,18 +17,18 @@ const SongTwo = () => {
           NEW EP RELEASE
         </h3>
         <div className="mx-10 text-xs md:text-sm">
-          <button className="bg-pink p-3 border-2 border-white w-full hover:bg-white hover:text-pink hover:border-pink">
+          <button className="bg-pink p-3 border-2 border-white w-full hover:bg-white hover:text-pink hover:border-pink rounded-xl">
             <Link href={"https://music.apple.com/us/browse"}>APPLE MUSIC</Link>
           </button>
           <div className="flex w-full gap-4 md:gap-8 mt-8">
-            <button className="bg-pink p-3 border-2 border-white w-3/4 hover:bg-white hover:text-pink hover:border-pink">
+            <button className="bg-pink p-3 border-2 border-white w-3/4 hover:bg-white hover:text-pink hover:border-pink rounded-xl">
               <Link href={"https://soundcloud.com/"}>SOUNDCLOUD</Link>
             </button>
-            <button className="bg-pink p-3 border-2 border-white w-3/4 hover:bg-white hover:text-pink hover:border-pink">
+            <button className="bg-pink p-3 border-2 border-white w-3/4 hover:bg-white hover:text-pink hover:border-pink rounded-xl">
               <Link href={"https://open.spotify.com/"}>SPOTIFY</Link>
             </button>
           </div>
-          <button className="bg-pink p-3 border-2 border-white w-full mt-8 hover:bg-white hover:text-pink hover:border-pink">
+          <button className="bg-pink p-3 border-2 border-white w-full mt-8 hover:bg-white hover:text-pink hover:border-pink rounded-xl">
             <Link href={"https://genius.com/"}>LYRICS</Link>
           </button>
         </div>

@@ -5,11 +5,11 @@ import SongTwo from "./SongTwo";
 
 const Music = () => {
   return (
-    <div id="music" className="text-center mt-8">
+    <section id="music" className="text-center mt-8 md:px-12">
       <Image src={musicHeading} alt="music heading" priority />
       <Song />
       <SongTwo />
-    </div>
+    </section>
   );
 };
 

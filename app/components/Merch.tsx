@@ -6,9 +6,9 @@ import blShirt from "@/public/black-shirt-merch.png";
 
 const Merch = () => {
   return (
-    <div id="merch" className="text-center mt-8">
+    <div id="merch" className="text-center mt-8 md:px-12">
       <Image src={merchHeading} alt="merch heading" priority />
-      <section className="bg-darkerPink flex flex-col items-center mx-10">
+      <section className="bg-pink border-8 border-darkPink rounded-full flex flex-col items-center mx-10">
         <div className="flex flex-col items-center md:flex-row md:justify-center">
           <Image
             src={whShirt}

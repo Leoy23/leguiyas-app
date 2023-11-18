@@ -9,12 +9,14 @@ const NewsletterForm = () => {
   const handleSubmit = () => {};
 
   return (
-    <section className="w-full flex justify-end pb-4">
-      <div id="newsletterForm" className="">
+    <section className="w-full flex justify-center pb-4">
+      <div id="newsletter_Form" className="">
         {error}
         <form className="max-w-lg w-full md:max-w-xl lg:max-w-2xl xl:max-w-3xl px-4">
           <label className="label">
-            <span className="label-text text-white">Join our newsletter</span>
+            <span className="label-text text-white font-semibold">
+              Join our newsletter
+            </span>
           </label>
           <div className="flex">
             <input
@@ -27,7 +29,7 @@ const NewsletterForm = () => {
                 type="button"
                 className="btn bg-darkerPink text-white border-transparent hover:bg-white hover:text-darkerPink"
               >
-                SEND
+                GO
               </button>
             </div>
           </div>
