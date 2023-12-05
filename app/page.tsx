@@ -23,3 +23,14 @@ const Home = () => {
 };
 
 export default Home;
+
+// export async function getServerSideProps() {
+//   const req = await fetch("localhost:3000/api/submit");
+//   const res = await req.json();
+
+//   return {
+//     props: {
+//       sheetdata: res.data,
+//     },
+//   };
+// }
